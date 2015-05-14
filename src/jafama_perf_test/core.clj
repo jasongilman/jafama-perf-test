@@ -185,7 +185,7 @@
 (defn evaluate-performance
   "Evaluates the performance of all the defined functions. Prints results to standard out."
   []
-  (println "Prints out Criterium results for each function ")
+  (println "Prints out Criterium results for each function. Takes a long time to run.")
   (doseq [[fn-symbol options] functions-to-measure]
     (println "-------------------------------------------------------------")
     (measure-performance fn-symbol options)))
